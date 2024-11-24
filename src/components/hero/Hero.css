@@ -1,0 +1,239 @@
+.typed {
+  color: #ff6542;
+}
+
+.hero_section {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+
+column-gap: 100px;
+}
+.hero_section .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.hero_section .left > h5 {
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  white-space: nowrap;
+  height: 27px;
+}
+.hero_section .left pre {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 5px;
+}
+.hero_section .left pre span {
+  color: #ff6542;
+}
+.hero_section .left p {
+  color: gray;
+  line-height: 25px;
+  font-size: 16px;
+}
+.left .explore_button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ff6542;
+  color: #ffffff;
+  width: 120px;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left .explore_button:hover {
+  background: linear-gradient(90deg, #ff6e01 0%, #fdab6c 100%);
+}
+.left .explore_button:hover:hover {
+  background: linear-gradient(90deg, #fdab6c 0%, #ff6e01 100%);
+  transform: scale(1.02);
+  transition: 0.3s ease-in;
+}
+ /* right  */
+ .hero_section .right {
+  width: 55%; 
+}
+.hero_section .right img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .hero_section .left > h5 {
+    font-size: 13px;
+  }
+  .hero_section .left pre {
+    font-size: 45px;
+  }
+  .hero_section .left p {
+    color: gray;
+    line-height: 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .hero_section .left {
+    gap: 15px;
+  }
+  .hero_section .left > h5 {
+    font-size: 13px;
+  }
+  .hero_section .left pre {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .hero_section .left p {
+    color: gray;
+    line-height: 25px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 870px) {
+  .hero_section .left {
+    gap: 10px;
+  }
+  .hero_section .left > h5 {
+    font-size: 10px;
+  }
+  .hero_section .left pre {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .hero_section .left p {
+    color: gray;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero_section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* right  */
+  /* .hero_section .right {
+    width: 55%;
+  }
+  .hero_section .right img {
+    width: 100%;
+  } */
+
+  .hero_section .left {
+    margin-top: 50px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .hero_section .left > h5 {
+    font-size: 15px;
+  }
+  .hero_section .left pre {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .hero_section .left p {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  /* right  */
+  .hero_section .right {
+    width: 55%;
+  }
+
+  .hero_section .left {
+    margin-top: 40px;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .hero_section .left > h5 {
+    font-size: 13px;
+  }
+  .hero_section .left pre {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero_section .left p {
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* right  */
+  .hero_section .right {
+    width: 55%;
+  }
+
+  .hero_section .left {
+    margin-top: 35px;
+    gap: 22px;
+  }
+
+  .hero_section .left pre {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* right  */
+  .hero_section .right {
+    width: 55%;
+  }
+
+  .hero_section .left {
+    margin-top: 35px;
+    gap: 15px;
+  }
+
+  .hero_section .left > h5 {
+    font-size: 13px;
+  }
+  .hero_section .left pre {
+    font-size: 30px;
+    line-height: 50px;
+    white-space: wrap;
+  }
+
+  .hero_section .left p {
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero_section .left {
+    margin-top: 25px;
+    gap: 15px;
+  }
+
+  .hero_section .left pre {
+    font-size: 25px;
+    line-height: 35px;
+    white-space: wrap;
+  }
+
+  .hero_section .left p {
+    line-height: 22px;
+    font-size: 16px;
+  }
+}

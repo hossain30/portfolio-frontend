@@ -1,0 +1,95 @@
+/* Importing Fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Roboto:wght@400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Josefin+Sans:wght@400&family=Poppins:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #ff6e01;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif; /* For normal text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 15px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3; /* Light background for the track */
+  border-radius: 5px; /* Rounded edges */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff6e01, #ff6e01); /* Green gradient */
+  border-radius: 5px; /* Rounded edges for thumb */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    45deg,
+    #f2791d,
+    #ff8a31
+  ); /* Darker green on hover */
+}
+
+/* Global colours */
+
+body {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Charcoal text */
+}
+
+.highlight {
+  background-color: #ffd700; /* Soft yellow for highlights */
+}
+
+.button_small {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #0db75f; /* Teal for buttons */
+  color: #ffffff;
+}
+
+.button_small:hover {
+  background-color: #45a049;
+}
+
+.button_large {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #0db75f; /* Teal for buttons */
+  color: #ffffff;
+}
+
+.tick {
+  color: #7933FF;
+}

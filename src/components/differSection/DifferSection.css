@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.differSection {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+
+  background-color: #ffec9d;
+  border-radius: 8px;
+}
+::selection {
+  background-color: #FF6E01;
+
+  color: white !important; /* White text color */
+}
+
+.text_container {
+  margin-right: 20px;
+  width: 55%;
+
+  min-height: 100%;
+}
+
+.differSection .section_header {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+}
+
+.points_list {
+  list-style: none;
+  padding: 0;
+}
+
+.points_list li {
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.points_list strong {
+  color: #7933ff;
+  font-size: 23px;
+}
+.cv_download > a {
+  background: linear-gradient(90deg, #FF6E01 0%, #fdab6c 100%);
+}
+.cv_download > a:hover {
+  background: linear-gradient(90deg, #fdab6c 0%, #FF6E01 100%);
+}
+.cv_download {
+  margin-top: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1100px) {
+  .differSection {
+    padding: 40px;
+    flex-direction: column;
+  }
+  .text_container {
+    width: 100%;
+  }
+  .differSection .section_header {
+    font-size: 27px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .differSection .section_header {
+    text-align: center;
+  }
+  .points_list li {
+    margin: 20px 0;
+    font-size: 20px;
+
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .differSection {
+    padding: 20px;
+  }
+  .differSection .section_header {
+    font-size: 20px;
+  }
+  .points_list li {
+    font-size: 15px;
+  }
+
+  .points_list strong {
+
+    font-size: 18px;
+  }
+  .cv_download .cv_button {
+    margin-top: 30px;
+    height: 20px;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+}
