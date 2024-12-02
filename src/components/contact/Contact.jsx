@@ -18,17 +18,20 @@ const ContactForm = ({ setLoading }) => {
     e.preventDefault();
     let { name, email, phone, message } = form;
     setLoading(true);
-    let response = await fetch("https://portfolio-backend-lgll.onrender.com/contactUs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, phone, message }),
-    });
+    let response = await fetch(
+      "https://portfolio-backend-lgll.onrender.com/contactUs",
+      // "http://localhost:3000/contactUs",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, phone, message }),
+      }
+    );
     setLoading(false);
 
     response = await response.json();
-
 
     if (response.status === 200) {
       toast.success("Form submitted", {
@@ -40,7 +43,6 @@ const ContactForm = ({ setLoading }) => {
       toast.error("Internal Server Error", {
         style: { color: "white", backgroundColor: "black" },
       });
-
     }
   };
 
