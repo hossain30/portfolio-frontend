@@ -19,7 +19,7 @@ const ContactForm = ({ setLoading }) => {
     let { name, email, phone, message } = form;
     setLoading(true);
     let response = await fetch(
-      "https://portfolio-backend-lgll.onrender.com/contactUs",
+      "https://portfolio-backend-1-qpz1.onrender.com/contactUs",
       // "http://localhost:3000/contactUs",
       {
         method: "POST",
